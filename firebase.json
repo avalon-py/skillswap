@@ -1,0 +1,26 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "skill-swap-ebe85",
+          "appId": "1:1094654520243:android:9a0ae3204cdb324b8e79c6",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "skill-swap-ebe85",
+          "configurations": {
+            "android": "1:1094654520243:android:9a0ae3204cdb324b8e79c6",
+            "web": "1:1094654520243:web:647852b57d24c7f58e79c6"
+          }
+        }
+      }
+    }
+  }
+}
