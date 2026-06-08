@@ -60,32 +60,14 @@ final routerProvider = Provider<GoRouter>((ref) {
       return null;
     },
     routes: [
-      // Joshua's routes
       GoRoute(path: '/splash',  builder: (_, __) => const SplashScreen()),
       GoRoute(path: '/sign-in', builder: (_, __) => const SignInScreen()),
       GoRoute(path: '/sign-up', builder: (_, __) => const SignUpScreen()),
 
-      // Stefano's routes
       GoRoute(path: '/profile-setup', builder: (_, __) => const ProfileSetupScreen()),
       GoRoute(path: '/profile-edit',  builder: (_, __) => const ProfileEditScreen()),
       GoRoute(path: '/settings',      builder: (_, __) => const SettingsScreen()),
       GoRoute(path: '/me',            builder: (_, __) => const MeScreen()),
-      GoRoute(path: '/swaps',         builder: (_, __) => const SwapsScreen()),
-
-      // Nathanael's routes
-      GoRoute(path: '/chats', builder: (_, __) => const ChatsScreen()),
-      GoRoute(
-        path: '/match/:matchId',
-        builder: (_, state) => MatchDetailScreen(
-          matchId: state.pathParameters['matchId']!,
-        ),
-      ),
-      GoRoute(
-        path: '/match/:matchId/chat',
-        builder: (_, state) => ChatScreen(
-          matchId: state.pathParameters['matchId']!,
-        ),
-      ),
-    ],
+      GoRoute(path: '/swaps',         builder: (_, __) => const SwapsScreen()),    ],
   );
 });
