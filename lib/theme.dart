@@ -5,88 +5,81 @@ import 'package:google_fonts/google_fonts.dart';
 class AppColors {
   AppColors._();
 
-  // Brand — Terracotta (primary)
-  static const terracotta50  = Color(0xFFFBF1ED);
-  static const terracotta100 = Color(0xFFF6DDD3);
-  static const terracotta200 = Color(0xFFEBBBA6);
-  static const terracotta300 = Color(0xFFDA957A);
-  static const terracotta400 = Color(0xFFCD7E63);
-  static const terracotta500 = Color(0xFFC76F5C);
-  static const terracotta600 = Color(0xFFC26B5A); // anchor — primary
-  static const terracotta700 = Color(0xFFA8543F);
-  static const terracotta800 = Color(0xFF863F2D);
-  static const terracotta900 = Color(0xFF5C2A1D);
-  static const terracotta950 = Color(0xFF2A1612);
+  static const terracotta50  = Color(0xFFEDEAE2);
+  static const terracotta100 = Color(0xFFE4E0D4); // primary container
+  static const terracotta200 = Color(0xFFC9C2AC);
+  static const terracotta300 = Color(0xFF8E8675);
+  static const terracotta400 = Color(0xFFB0B0A8); // dark-scheme primary
+  static const terracotta500 = Color(0xFF3D3833);
+  static const terracotta600 = Color(0xFF171614); // anchor — primary
+  static const terracotta700 = Color(0xFF2C2925);
+  static const terracotta800 = Color(0xFF1F1D1A);
+  static const terracotta900 = Color(0xFF0D0C0A);
+  static const terracotta950 = Color(0xFF0A0908);
 
-  // Brand — Sage (secondary)
-  static const sage50  = Color(0xFFF1F4EF);
-  static const sage100 = Color(0xFFDDE4D9);
-  static const sage200 = Color(0xFFBCC9B6);
-  static const sage300 = Color(0xFFA1B39A);
-  static const sage400 = Color(0xFF95AB8E);
-  static const sage500 = Color(0xFF8FA68E); // anchor — secondary
-  static const sage600 = Color(0xFF708A6E);
-  static const sage700 = Color(0xFF54695A);
-  static const sage800 = Color(0xFF3B4D40);
-  static const sage900 = Color(0xFF243029);
-  static const sage950 = Color(0xFF111914);
+  static const sage50  = Color(0xFFE8EEE7);
+  static const sage100 = Color(0xFFD2DECD); // secondary container
+  static const sage200 = Color(0xFFA8BFA1);
+  static const sage300 = Color(0xFF6E8E78);
+  static const sage400 = Color(0xFF4A6E5A); // dark-scheme secondary
+  static const sage500 = Color(0xFF1F4133); // anchor — secondary
+  static const sage600 = Color(0xFF173329);
+  static const sage700 = Color(0xFF11261E);
+  static const sage800 = Color(0xFF0B1A14);
+  static const sage900 = Color(0xFF071009);
+  static const sage950 = Color(0xFF03070A);
 
-  // Neutrals — Linen (warm)
-  static const linen50  = Color(0xFFF5EDE0); // anchor — surface
-  static const linen100 = Color(0xFFEBE2D0);
-  static const linen200 = Color(0xFFD9CDB9);
-  static const linen300 = Color(0xFFBFB096);
-  static const linen400 = Color(0xFF98886F);
-  static const linen500 = Color(0xFF756753);
-  static const linen600 = Color(0xFF5A4F40);
-  static const linen700 = Color(0xFF463D32);
-  static const linen800 = Color(0xFF3D332A); // anchor — text
-  static const linen900 = Color(0xFF2D2520);
-  static const linen950 = Color(0xFF1A1411);
+  static const linen50  = Color(0xFFF2EFE8); // anchor — surface (paper)
+  static const linen100 = Color(0xFFE8E4DA);
+  static const linen200 = Color(0xFFDAD3C6); // outline
+  static const linen300 = Color(0xFFBAB2A0);
+  static const linen400 = Color(0xFF8A8275);
+  static const linen500 = Color(0xFF6E665A);
+  static const linen600 = Color(0xFF5C544A); // muted text
+  static const linen700 = Color(0xFF3A332C);
+  static const linen800 = Color(0xFF1A1714); // anchor — text ink
+  static const linen900 = Color(0xFF100E0C);
+  static const linen950 = Color(0xFF080705);
 
-  // Custom dark surfaces (warm cocoa, replaces cool slate)
-  static const darkBg            = Color(0xFF1A1411);
-  static const darkSurface       = Color(0xFF221B16);
-  static const darkSurfaceMuted  = Color(0xFF2A2118);
-  static const darkOutline       = Color(0xFF3D332A);
-  static const darkOutlineFaint  = Color(0xFF2A2018);
+  // Dark surfaces — true ink, no warm cocoa.
+  static const darkBg            = Color(0xFF0B0A09);
+  static const darkSurface       = Color(0xFF131210);
+  static const darkSurfaceMuted  = Color(0xFF1B1916);
+  static const darkOutline       = Color(0xFF2A2622);
+  static const darkOutlineFaint  = Color(0xFF1B1815);
 
-  // Semantic — amber kept for stars; red retuned to fit warm palette
-  static const amber400 = Color(0xFFFBBF24);
-  static const amber500 = Color(0xFFF59E0B);
+  static const amber400 = Color(0xFFFFD24A);
+  static const amber500 = Color(0xFFF5B82E);
 
-  // Sunburst — high-energy CTA pop, used sparingly (swipe Like, Submit Rating).
-  // Sits OUTSIDE the ColorScheme so it doesn't override Material defaults.
-  static const sunburst100 = Color(0xFFFFE5D2);
-  static const sunburst300 = Color(0xFFFBAC73);
-  static const sunburst500 = Color(0xFFF97316);
-  static const sunburst700 = Color(0xFFC2410C);
-  static const sunburst900 = Color(0xFF7C2D12);
+  static const sunburst100 = Color(0xFFF1FBC9);
+  static const sunburst300 = Color(0xFFDCFB66);
+  static const sunburst500 = Color(0xFFC6FA4D);
+  static const sunburst700 = Color(0xFF7A9F1F);
+  static const sunburst900 = Color(0xFF354A0C);
 
-  static const red100 = Color(0xFFF8DAD8);
-  static const red400 = Color(0xFFE47670);
-  static const red500 = Color(0xFFD5524A);
-  static const red900 = Color(0xFF6B2421);
+  static const red100 = Color(0xFFFCDED9);
+  static const red400 = Color(0xFFF26B5C);
+  static const red500 = Color(0xFFE94B33);
+  static const red900 = Color(0xFF5C1812);
 
-  // Avatar palette — kept (uses direct hex, multi-color by design)
   static const avatarPalette = <Color>[
-    Color(0xFF6366F1), // indigo
-    Color(0xFFA855F7), // violet
-    Color(0xFFEC4899), // pink
-    Color(0xFFF97316), // orange
-    Color(0xFFF59E0B), // amber
-    Color(0xFF14B8A6), // teal
-    Color(0xFF22C55E), // green
-    Color(0xFF0EA5E9), // sky
+    Color(0xFF4F5BD5), // indigo
+    Color(0xFF7B49B5), // violet
+    Color(0xFFDB4B7C), // rose
+    Color(0xFFE07A2E), // sienna
+    Color(0xFFD49F1F), // ochre
+    Color(0xFF1D7B6D), // teal
+    Color(0xFF2E7F3D), // forest
+    Color(0xFF2A6FB5), // ocean
   ];
 }
 
 class AppRadii {
   AppRadii._();
-  static const double xs = 8;
-  static const double sm = 10;
-  static const double md = 12;
-  static const double lg = 14;
+  static const double xs = 6;
+  static const double sm = 8;
+  static const double md = 10;
+  static const double lg = 12;
   static const double xl = 16;
   static const double xxl = 20;
   static const double full = 999;
@@ -104,25 +97,79 @@ class AppSpacing {
   static const double huge = 48;
 }
 
+class AppFonts {
+  AppFonts._();
+
+  static TextStyle display({
+    required double size,
+    FontWeight weight = FontWeight.w700,
+    double letter = -0.5,
+    double height = 1.05,
+    Color? color,
+    bool italic = false,
+  }) {
+    return GoogleFonts.fraunces(
+      fontSize: size,
+      fontWeight: weight,
+      letterSpacing: letter,
+      height: height,
+      color: color,
+      fontStyle: italic ? FontStyle.italic : FontStyle.normal,
+    );
+  }
+
+  static TextStyle body({
+    required double size,
+    FontWeight weight = FontWeight.w400,
+    double letter = 0,
+    double height = 1.45,
+    Color? color,
+  }) {
+    return GoogleFonts.dmSans(
+      fontSize: size,
+      fontWeight: weight,
+      letterSpacing: letter,
+      height: height,
+      color: color,
+    );
+  }
+
+  static TextStyle stamp({
+    required double size,
+    FontWeight weight = FontWeight.w600,
+    double letter = 1.6,
+    double height = 1.0,
+    Color? color,
+  }) {
+    return GoogleFonts.jetBrainsMono(
+      fontSize: size,
+      fontWeight: weight,
+      letterSpacing: letter,
+      height: height,
+      color: color,
+    );
+  }
+}
+
 ThemeData buildLightTheme() {
   const scheme = ColorScheme(
     brightness: Brightness.light,
-    primary: AppColors.terracotta600,
-    onPrimary: Colors.white,
+    primary: AppColors.terracotta600,           // ink #171614
+    onPrimary: AppColors.linen50,                // paper on ink
     primaryContainer: AppColors.terracotta100,
     onPrimaryContainer: AppColors.terracotta900,
-    secondary: AppColors.sage500,
-    onSecondary: Colors.white,
+    secondary: AppColors.sage500,                // forest #1F4133
+    onSecondary: AppColors.linen50,
     secondaryContainer: AppColors.sage100,
     onSecondaryContainer: AppColors.sage900,
     tertiary: AppColors.amber500,
-    onTertiary: Colors.white,
+    onTertiary: AppColors.linen900,
     error: AppColors.red500,
     onError: Colors.white,
     errorContainer: AppColors.red100,
     onErrorContainer: AppColors.red900,
-    surface: AppColors.linen50,
-    onSurface: AppColors.linen800,
+    surface: AppColors.linen50,                  // bone paper
+    onSurface: AppColors.linen800,               // text ink
     surfaceContainerLowest: Colors.white,
     surfaceContainerLow: AppColors.linen50,
     surfaceContainer: AppColors.linen100,
@@ -133,7 +180,7 @@ ThemeData buildLightTheme() {
     outlineVariant: AppColors.linen100,
     inverseSurface: AppColors.linen800,
     onInverseSurface: AppColors.linen100,
-    inversePrimary: AppColors.terracotta300,
+    inversePrimary: AppColors.sunburst500,       // lime glows on dark
     shadow: Color(0xFF000000),
     scrim: Color(0xFF000000),
   );
@@ -143,13 +190,13 @@ ThemeData buildLightTheme() {
 ThemeData buildDarkTheme() {
   const scheme = ColorScheme(
     brightness: Brightness.dark,
-    primary: AppColors.terracotta400,
-    onPrimary: AppColors.terracotta950,
-    primaryContainer: AppColors.terracotta900,
-    onPrimaryContainer: AppColors.terracotta100,
+    primary: AppColors.sunburst500,              // lime is the dark-mode hero
+    onPrimary: AppColors.sage900,
+    primaryContainer: AppColors.sunburst900,
+    onPrimaryContainer: AppColors.sunburst100,
     secondary: AppColors.sage400,
     onSecondary: AppColors.sage900,
-    secondaryContainer: AppColors.sage900,
+    secondaryContainer: AppColors.sage800,
     onSecondaryContainer: AppColors.sage100,
     tertiary: AppColors.amber400,
     onTertiary: AppColors.linen900,
@@ -169,7 +216,7 @@ ThemeData buildDarkTheme() {
     outlineVariant: AppColors.darkOutlineFaint,
     inverseSurface: AppColors.linen100,
     onInverseSurface: AppColors.linen900,
-    inversePrimary: AppColors.terracotta700,
+    inversePrimary: AppColors.terracotta600,
     shadow: Color(0xFF000000),
     scrim: Color(0xFF000000),
   );
@@ -187,55 +234,58 @@ ThemeData _buildTheme(ColorScheme scheme) {
     visualDensity: VisualDensity.standard,
   );
 
-  // Plus Jakarta Sans throughout — single family, hierarchy via weight + size.
-  TextStyle pj({
-    required double size,
-    required FontWeight weight,
-    double? height,
-    double letter = 0,
-    Color? color,
-  }) {
-    return GoogleFonts.plusJakartaSans(
+  TextStyle display(double size, FontWeight w,
+      {double letter = -0.5, double height = 1.05}) {
+    return GoogleFonts.fraunces(
       fontSize: size,
-      fontWeight: weight,
-      height: height,
+      fontWeight: w,
       letterSpacing: letter,
+      height: height,
+      color: scheme.onSurface,
+    );
+  }
+
+  TextStyle body(double size, FontWeight w,
+      {double letter = 0, double height = 1.45, Color? color}) {
+    return GoogleFonts.dmSans(
+      fontSize: size,
+      fontWeight: w,
+      letterSpacing: letter,
+      height: height,
       color: color ?? scheme.onSurface,
     );
   }
 
-  final textTheme =
-      GoogleFonts.plusJakartaSansTextTheme(base.textTheme).copyWith(
-    displayLarge: pj(size: 44, weight: FontWeight.w800, letter: -1.0, height: 1.02),
-    displayMedium: pj(size: 38, weight: FontWeight.w800, letter: -0.8, height: 1.05),
-    displaySmall: pj(size: 32, weight: FontWeight.w800, letter: -0.6, height: 1.08),
-    headlineLarge: pj(size: 28, weight: FontWeight.w800, letter: -0.4, height: 1.15),
-    headlineMedium: pj(size: 24, weight: FontWeight.w700, letter: -0.3, height: 1.2),
-    headlineSmall: pj(size: 20, weight: FontWeight.w700, letter: -0.2, height: 1.25),
-    titleLarge: pj(size: 18, weight: FontWeight.w600, letter: -0.1, height: 1.3),
-    titleMedium: pj(size: 16, weight: FontWeight.w600, height: 1.35),
-    titleSmall: pj(size: 14, weight: FontWeight.w600, height: 1.4),
-    bodyLarge: pj(size: 16, weight: FontWeight.w400, height: 1.55),
-    bodyMedium: pj(
-      size: 14,
-      weight: FontWeight.w400,
-      height: 1.5,
-      color: scheme.onSurfaceVariant,
-    ),
-    bodySmall: pj(
-      size: 13,
-      weight: FontWeight.w400,
-      height: 1.45,
-      color: scheme.onSurfaceVariant,
-    ),
-    labelLarge: pj(size: 14, weight: FontWeight.w600, letter: 0.1),
-    labelMedium: pj(size: 12, weight: FontWeight.w600, letter: 0.2),
-    labelSmall: pj(
-      size: 11,
-      weight: FontWeight.w600,
-      letter: 0.4,
-      color: scheme.onSurfaceVariant,
-    ),
+  TextStyle mono(double size, FontWeight w,
+      {double letter = 1.4, double height = 1.0, Color? color}) {
+    return GoogleFonts.jetBrainsMono(
+      fontSize: size,
+      fontWeight: w,
+      letterSpacing: letter,
+      height: height,
+      color: color ?? scheme.onSurface,
+    );
+  }
+
+  final textTheme = base.textTheme.copyWith(
+    displayLarge:   display(48, FontWeight.w700, letter: -1.4, height: 1.0),
+    displayMedium:  display(40, FontWeight.w700, letter: -1.0, height: 1.02),
+    displaySmall:   display(32, FontWeight.w700, letter: -0.7, height: 1.05),
+    headlineLarge:  display(28, FontWeight.w700, letter: -0.5, height: 1.1),
+    headlineMedium: display(24, FontWeight.w600, letter: -0.4, height: 1.15),
+    headlineSmall:  display(20, FontWeight.w600, letter: -0.3, height: 1.2),
+    titleLarge:     body(18, FontWeight.w600, letter: -0.1, height: 1.3),
+    titleMedium:    body(16, FontWeight.w600, height: 1.35),
+    titleSmall:     body(14, FontWeight.w600, height: 1.4),
+    bodyLarge:      body(16, FontWeight.w400, height: 1.55),
+    bodyMedium:     body(14, FontWeight.w400,
+                        height: 1.5, color: scheme.onSurfaceVariant),
+    bodySmall:      body(13, FontWeight.w400,
+                        height: 1.45, color: scheme.onSurfaceVariant),
+    labelLarge:     mono(13, FontWeight.w700, letter: 1.2),
+    labelMedium:    mono(11, FontWeight.w700, letter: 1.4),
+    labelSmall:     mono(10, FontWeight.w700,
+                        letter: 1.6, color: scheme.onSurfaceVariant),
   );
 
   return base.copyWith(
@@ -260,8 +310,8 @@ ThemeData _buildTheme(ColorScheme scheme) {
       elevation: 0,
       margin: EdgeInsets.zero,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(AppRadii.xxl),
-        side: BorderSide(color: scheme.outline, width: 1),
+        borderRadius: BorderRadius.circular(AppRadii.xl),
+        side: BorderSide(color: scheme.onSurface, width: 1.5),
       ),
     ),
     filledButtonTheme: FilledButtonThemeData(
@@ -272,15 +322,15 @@ ThemeData _buildTheme(ColorScheme scheme) {
             scheme.onSurface.withValues(alpha: 0.08),
         disabledForegroundColor:
             scheme.onSurface.withValues(alpha: 0.38),
-        minimumSize: const Size.fromHeight(52),
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+        minimumSize: const Size.fromHeight(54),
+        padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 14),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppRadii.lg),
         ),
-        textStyle: GoogleFonts.plusJakartaSans(
+        textStyle: GoogleFonts.dmSans(
           fontSize: 15,
-          fontWeight: FontWeight.w600,
-          letterSpacing: 0.1,
+          fontWeight: FontWeight.w700,
+          letterSpacing: 0.2,
         ),
       ),
     ),
@@ -289,31 +339,31 @@ ThemeData _buildTheme(ColorScheme scheme) {
         elevation: 0,
         backgroundColor: scheme.primary,
         foregroundColor: scheme.onPrimary,
-        minimumSize: const Size.fromHeight(52),
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+        minimumSize: const Size.fromHeight(54),
+        padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 14),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppRadii.lg),
         ),
-        textStyle: GoogleFonts.plusJakartaSans(
+        textStyle: GoogleFonts.dmSans(
           fontSize: 15,
-          fontWeight: FontWeight.w600,
-          letterSpacing: 0.1,
+          fontWeight: FontWeight.w700,
+          letterSpacing: 0.2,
         ),
       ),
     ),
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
         foregroundColor: scheme.onSurface,
-        side: BorderSide(color: scheme.outline, width: 1.2),
-        minimumSize: const Size.fromHeight(48),
-        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+        side: BorderSide(color: scheme.onSurface, width: 1.4),
+        minimumSize: const Size.fromHeight(50),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppRadii.lg),
         ),
-        textStyle: GoogleFonts.plusJakartaSans(
+        textStyle: GoogleFonts.dmSans(
           fontSize: 14,
-          fontWeight: FontWeight.w600,
-          letterSpacing: 0.1,
+          fontWeight: FontWeight.w700,
+          letterSpacing: 0.2,
         ),
       ),
     ),
@@ -321,9 +371,9 @@ ThemeData _buildTheme(ColorScheme scheme) {
       style: TextButton.styleFrom(
         foregroundColor: scheme.primary,
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-        textStyle: GoogleFonts.plusJakartaSans(
+        textStyle: GoogleFonts.dmSans(
           fontSize: 14,
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.w700,
           letterSpacing: 0.1,
         ),
       ),
@@ -340,12 +390,12 @@ ThemeData _buildTheme(ColorScheme scheme) {
       filled: true,
       fillColor: isDark
           ? scheme.surfaceContainer
-          : scheme.surfaceContainerLow,
+          : Colors.white,
       isDense: false,
       contentPadding:
-          const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
+          const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
       hintStyle: textTheme.bodyMedium?.copyWith(
-        color: scheme.onSurfaceVariant.withValues(alpha: 0.7),
+        color: scheme.onSurfaceVariant.withValues(alpha: 0.6),
       ),
       labelStyle: textTheme.bodyMedium?.copyWith(
         color: scheme.onSurfaceVariant,
@@ -355,19 +405,19 @@ ThemeData _buildTheme(ColorScheme scheme) {
       floatingLabelBehavior: FloatingLabelBehavior.auto,
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(AppRadii.md),
-        borderSide: BorderSide(color: scheme.outline, width: 1),
+        borderSide: BorderSide(color: scheme.outline, width: 1.2),
       ),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(AppRadii.md),
-        borderSide: BorderSide(color: scheme.outline, width: 1),
+        borderSide: BorderSide(color: scheme.outline, width: 1.2),
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(AppRadii.md),
-        borderSide: BorderSide(color: scheme.primary, width: 1.6),
+        borderSide: BorderSide(color: scheme.onSurface, width: 1.6),
       ),
       errorBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(AppRadii.md),
-        borderSide: BorderSide(color: scheme.error, width: 1.2),
+        borderSide: BorderSide(color: scheme.error, width: 1.4),
       ),
       focusedErrorBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(AppRadii.md),
@@ -375,18 +425,26 @@ ThemeData _buildTheme(ColorScheme scheme) {
       ),
     ),
     chipTheme: ChipThemeData(
-      backgroundColor: scheme.surfaceContainer,
-      selectedColor: scheme.primaryContainer,
-      side: BorderSide(color: scheme.outline, width: 1),
+      backgroundColor: Colors.transparent,
+      selectedColor: scheme.onSurface,
+      side: BorderSide(color: scheme.onSurface, width: 1.2),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(AppRadii.full),
       ),
-      labelStyle: textTheme.labelMedium,
-      secondaryLabelStyle: textTheme.labelMedium?.copyWith(
-        color: scheme.onPrimaryContainer,
+      labelStyle: GoogleFonts.jetBrainsMono(
+        fontSize: 11,
+        fontWeight: FontWeight.w700,
+        letterSpacing: 1.2,
+        color: scheme.onSurface,
       ),
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-      iconTheme: IconThemeData(color: scheme.onSurfaceVariant, size: 16),
+      secondaryLabelStyle: GoogleFonts.jetBrainsMono(
+        fontSize: 11,
+        fontWeight: FontWeight.w700,
+        letterSpacing: 1.2,
+        color: scheme.surface,
+      ),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+      iconTheme: IconThemeData(color: scheme.onSurfaceVariant, size: 14),
     ),
     dividerTheme: DividerThemeData(
       color: scheme.outlineVariant,
@@ -398,7 +456,7 @@ ThemeData _buildTheme(ColorScheme scheme) {
       backgroundColor: scheme.inverseSurface,
       contentTextStyle:
           textTheme.bodyMedium?.copyWith(color: scheme.onInverseSurface),
-      actionTextColor: scheme.inversePrimary,
+      actionTextColor: AppColors.sunburst500,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(AppRadii.md),
       ),
@@ -418,8 +476,9 @@ ThemeData _buildTheme(ColorScheme scheme) {
       elevation: 0,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(AppRadii.xl),
+        side: BorderSide(color: scheme.onSurface, width: 1.5),
       ),
-      titleTextStyle: textTheme.titleLarge,
+      titleTextStyle: textTheme.headlineSmall,
       contentTextStyle: textTheme.bodyMedium,
     ),
     listTileTheme: ListTileThemeData(
@@ -427,7 +486,7 @@ ThemeData _buildTheme(ColorScheme scheme) {
         borderRadius: BorderRadius.circular(AppRadii.md),
       ),
       contentPadding:
-          const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+          const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
       titleTextStyle: textTheme.titleMedium,
       subtitleTextStyle: textTheme.bodySmall,
       iconColor: scheme.onSurfaceVariant,
@@ -449,23 +508,23 @@ ThemeData _buildTheme(ColorScheme scheme) {
       backgroundColor: scheme.surface,
       surfaceTintColor: Colors.transparent,
       elevation: 0,
-      indicatorColor: scheme.primaryContainer,
+      indicatorColor: scheme.primary,
       indicatorShape: const StadiumBorder(),
       height: 68,
       labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
       iconTheme: WidgetStateProperty.resolveWith((states) {
         final selected = states.contains(WidgetState.selected);
         return IconThemeData(
-          color: selected ? scheme.primary : scheme.onSurfaceVariant,
+          color: selected ? scheme.onPrimary : scheme.onSurfaceVariant,
           size: 24,
         );
       }),
       labelTextStyle: WidgetStateProperty.resolveWith((states) {
         final selected = states.contains(WidgetState.selected);
-        return GoogleFonts.plusJakartaSans(
-          fontSize: 11,
-          fontWeight: selected ? FontWeight.w800 : FontWeight.w600,
-          letterSpacing: 0.3,
+        return GoogleFonts.jetBrainsMono(
+          fontSize: 10,
+          fontWeight: FontWeight.w700,
+          letterSpacing: 1.4,
           color: selected ? scheme.primary : scheme.onSurfaceVariant,
         );
       }),
