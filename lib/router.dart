@@ -4,8 +4,8 @@ import 'package:go_router/go_router.dart';
 
 import 'providers/auth_providers.dart';
 import 'providers/profile_providers.dart';
-import 'screens/chat_screen.dart';
 import 'screens/chats_screen.dart';
+import 'screens/chat_screen.dart';
 import 'screens/match_detail_screen.dart';
 import 'screens/me_screen.dart';
 import 'screens/profile_edit_screen.dart';
@@ -15,6 +15,8 @@ import 'screens/sign_in_screen.dart';
 import 'screens/sign_up_screen.dart';
 import 'screens/splash_screen.dart';
 import 'screens/swaps_screen.dart';
+import 'screens/swipe_screen.dart';
+import 'widgets/root_shell.dart';
 
 class _RouterRefresh extends ChangeNotifier {
   _RouterRefresh(Ref ref) {
@@ -54,26 +56,23 @@ final routerProvider = Provider<GoRouter>((ref) {
 
       if (authPaths.contains(loc) ||
           loc == '/splash' ||
-          loc == '/profile-setup') {
-        return '/me';
+          loc == '/profile-setup' ||
+          loc == '/home') {
+        return '/discover';
       }
       return null;
     },
     routes: [
-      // Joshua's routes
-      GoRoute(path: '/splash',  builder: (_, __) => const SplashScreen()),
+      GoRoute(path: '/splash', builder: (_, __) => const SplashScreen()),
       GoRoute(path: '/sign-in', builder: (_, __) => const SignInScreen()),
       GoRoute(path: '/sign-up', builder: (_, __) => const SignUpScreen()),
-
-      // Stefano's routes
-      GoRoute(path: '/profile-setup', builder: (_, __) => const ProfileSetupScreen()),
-      GoRoute(path: '/profile-edit',  builder: (_, __) => const ProfileEditScreen()),
-      GoRoute(path: '/settings',      builder: (_, __) => const SettingsScreen()),
-      GoRoute(path: '/me',            builder: (_, __) => const MeScreen()),
-      GoRoute(path: '/swaps',         builder: (_, __) => const SwapsScreen()),
-
-      // Nathanael's routes
-      GoRoute(path: '/chats', builder: (_, __) => const ChatsScreen()),
+      GoRoute(
+          path: '/profile-setup',
+          builder: (_, __) => const ProfileSetupScreen()),
+      GoRoute(
+          path: '/profile-edit',
+          builder: (_, __) => const ProfileEditScreen()),
+      GoRoute(path: '/settings', builder: (_, __) => const SettingsScreen()),
       GoRoute(
         path: '/match/:matchId',
         builder: (_, state) => MatchDetailScreen(
@@ -85,6 +84,26 @@ final routerProvider = Provider<GoRouter>((ref) {
         builder: (_, state) => ChatScreen(
           matchId: state.pathParameters['matchId']!,
         ),
+      ),
+      StatefulShellRoute.indexedStack(
+        builder: (context, state, shell) => RootShell(shell: shell),
+        branches: [
+          StatefulShellBranch(routes: [
+            GoRoute(path: '/me', builder: (_, __) => const MeScreen()),
+          ]),
+          StatefulShellBranch(routes: [
+            GoRoute(
+              path: '/discover',
+              builder: (_, __) => const SwipeScreen(),
+            ),
+          ]),
+          StatefulShellBranch(routes: [
+            GoRoute(path: '/swaps', builder: (_, __) => const SwapsScreen()),
+          ]),
+          StatefulShellBranch(routes: [
+            GoRoute(path: '/chats', builder: (_, __) => const ChatsScreen()),
+          ]),
+        ],
       ),
     ],
   );
