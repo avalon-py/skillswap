@@ -23,7 +23,7 @@ class RatingBadge extends ConsumerWidget {
         height: 16,
         child: CircularProgressIndicator(strokeWidth: 1.5),
       ),
-      error: (_, __) => const SizedBox.shrink(),
+      error: (_, _) => const SizedBox.shrink(),
       data: (agg) {
         if (agg.count == 0) {
           return Text(
