@@ -80,29 +80,31 @@ class SettingsScreen extends ConsumerWidget {
           ],
           const _SectionLabel('APPEARANCE'),
           const SizedBox(height: AppSpacing.sm),
-          RadioListTile<ThemeMode>(
-            value: ThemeMode.system,
+          RadioGroup<ThemeMode>(
             groupValue: mode,
-            title: const Text('System'),
-            subtitle: const Text('Match your device'),
-            secondary: const Icon(Icons.brightness_auto_rounded),
             onChanged: (m) => _setMode(ref, m),
-          ),
-          RadioListTile<ThemeMode>(
-            value: ThemeMode.light,
-            groupValue: mode,
-            title: const Text('Light'),
-            subtitle: const Text('Warm linen'),
-            secondary: const Icon(Icons.light_mode_rounded),
-            onChanged: (m) => _setMode(ref, m),
-          ),
-          RadioListTile<ThemeMode>(
-            value: ThemeMode.dark,
-            groupValue: mode,
-            title: const Text('Dark'),
-            subtitle: const Text('Cocoa night'),
-            secondary: const Icon(Icons.dark_mode_rounded),
-            onChanged: (m) => _setMode(ref, m),
+            child: Column(
+              children: [
+                RadioListTile<ThemeMode>(
+                  value: ThemeMode.system,
+                  title: const Text('System'),
+                  subtitle: const Text('Match your device'),
+                  secondary: const Icon(Icons.brightness_auto_rounded),
+                ),
+                RadioListTile<ThemeMode>(
+                  value: ThemeMode.light,
+                  title: const Text('Light'),
+                  subtitle: const Text('Warm linen'),
+                  secondary: const Icon(Icons.light_mode_rounded),
+                ),
+                RadioListTile<ThemeMode>(
+                  value: ThemeMode.dark,
+                  title: const Text('Dark'),
+                  subtitle: const Text('Cocoa night'),
+                  secondary: const Icon(Icons.dark_mode_rounded),
+                ),
+              ],
+            ),
           ),
           const SizedBox(height: AppSpacing.xl),
           const _SectionLabel('SESSION'),
