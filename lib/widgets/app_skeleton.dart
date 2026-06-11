@@ -44,7 +44,7 @@ class _SkeletonBoxState extends State<SkeletonBox>
     final scheme = Theme.of(context).colorScheme;
     return AnimatedBuilder(
       animation: _ctrl,
-      builder: (_, __) {
+      builder: (_, _) {
         final t = Curves.easeInOut.transform(_ctrl.value);
         final color = Color.lerp(
           scheme.surfaceContainer,
