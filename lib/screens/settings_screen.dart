@@ -79,7 +79,6 @@ class SettingsScreen extends ConsumerWidget {
             const SizedBox(height: AppSpacing.xl),
           ],
           const _SectionLabel('APPEARANCE'),
-          const _SectionLabel('APPEARANCE'),
           const SizedBox(height: AppSpacing.sm),
           RadioGroup<ThemeMode>(
             groupValue: mode,
