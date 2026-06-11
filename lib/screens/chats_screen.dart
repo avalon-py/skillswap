@@ -54,7 +54,7 @@ class ChatsScreen extends ConsumerWidget {
                         AppSpacing.xxl,
                         AppSpacing.xxxl),
                     itemCount: matches.length + 1,
-                    separatorBuilder: (_, __) =>
+                    separatorBuilder: (_, _) =>
                         const SizedBox(height: AppSpacing.sm),
                     itemBuilder: (context, i) {
                       if (i == 0) {
